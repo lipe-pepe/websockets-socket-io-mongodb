@@ -5,7 +5,7 @@ import http from "http";
 
 import express from "express";
 import { Server } from "socket.io";
-import "./dbConnect.js";
+import "../servidor/db/dbConnect.js";
 
 const PORTA = process.env.PORTA || 3000;
 const app = express();

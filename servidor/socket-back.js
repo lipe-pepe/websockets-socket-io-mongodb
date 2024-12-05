@@ -4,8 +4,8 @@ import {
   obterDocumentos,
   adicionarDocumento,
   excluirDocumento,
-} from "./documentosDb.js";
-import io from "./servidor.js";
+} from "../src/documentosDb.js";
+import io from "../src/servidor.js";
 
 io.on("connection", (socket) => {
   socket.on("obter_documentos", async (devolverDocumentos) => {
